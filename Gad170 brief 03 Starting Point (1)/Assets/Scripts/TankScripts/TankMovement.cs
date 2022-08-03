@@ -13,6 +13,7 @@ public class TankMovement
     public float turnSpeed = 180f; // the speed that we can turn in degrees in seconds.
 
     private TankParticleEffects tankParticleEffects = new TankParticleEffects(); // creating a new instance of our tank particle effects class
+    internal int playernumber;
     public TankSoundEffects tankSoundEffects = new TankSoundEffects(); // creating a new instance of our tank sound effects class
 
     private Rigidbody rigidbody;// a reference to the rigidbody on our tank

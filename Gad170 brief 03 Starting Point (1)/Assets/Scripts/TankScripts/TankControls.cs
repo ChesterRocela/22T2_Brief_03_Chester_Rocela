@@ -20,6 +20,8 @@ public class TankControls
     public KeyCode play2stamina = KeyCode.RightShift; // player 2 stamina
     private bool fireButtonWasPressed = false; // has the fire button been pressed?
 
+    public int playernumber { get; internal set; }
+
     /// <summary>
     /// If the value returned is postive then the postive axis has been pressed for that key.
     /// if the value returned is negative then the negative axis as been pressed
