@@ -9,8 +9,7 @@ public class player1stamina : MonoBehaviour
 
     private int maxStamina = 300;
     private int currentStamina;
-    public float PlayerSpeed = 5f;
-
+    
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
 
@@ -25,6 +24,7 @@ public class player1stamina : MonoBehaviour
         currentStamina = maxStamina;
         Play1stamina.maxValue = maxStamina;
         Play1stamina.value = maxStamina;
+
     }
     public void UseStamina(int amount)
     {

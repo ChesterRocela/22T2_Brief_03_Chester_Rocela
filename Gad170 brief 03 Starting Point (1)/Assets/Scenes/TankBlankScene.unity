@@ -2135,7 +2135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Play1stamina: {fileID: 813883951}
-  PlayerSpeed: 5
 --- !u!1 &827759868
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +3166,11 @@ PrefabInstance:
       propertyPath: enableTankMovement
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
+        type: 3}
+      propertyPath: tankMovement.speed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3330961946120512846, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -3832,6 +3836,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1454985805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
+    type: 3}
+  m_PrefabInstance: {fileID: 1995614346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1454985811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454985805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2217a1da7cfdb684782d079b81acae99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1527798486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 02ead1494a9bc6543b4742a71b0dabd4,
@@ -5167,6 +5189,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.7487373, y: 1.9718478, z: 7.616281}
   m_Center: {x: 1.3477052, y: -0.018388301, z: -0.7943466}
+--- !u!1 &1947750945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
+    type: 3}
+  m_PrefabInstance: {fileID: 1133360520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1947750951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947750945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ce0f5927bae7b4ab57487930005ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1995614346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5253,6 +5293,11 @@ PrefabInstance:
         type: 3}
       propertyPath: enableTankMovement
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
+        type: 3}
+      propertyPath: tankMovement.speed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
