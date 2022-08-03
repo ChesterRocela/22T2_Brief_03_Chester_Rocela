@@ -7,6 +7,7 @@ public class TankCameraController : MonoBehaviour
     public float dampTime = 0.2f; // Approximate time it should take for our camera to focus on our tanks
     public float screenEdgeBuffer = 4; // space between the top and the bottom of targets
     public float minCameraSize = 6.5f; // the smallest othorgraphic camera size
+    [HideInInspector] public Transform [] m_Targets;
     private List<GameObject> listOfTanks = new List<GameObject>(); // a reference to all the tanks in our scene
 
     private Camera cam; // a reference to our main camera 

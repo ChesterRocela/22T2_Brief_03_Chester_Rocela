@@ -12,6 +12,7 @@ public class TankGameManager : MonoBehaviour
     private int playerTwoScore;
     private int playerThreeScore;
     private int playerFourscore;
+    internal readonly int Length;
 
     private void OnEnable()
     {

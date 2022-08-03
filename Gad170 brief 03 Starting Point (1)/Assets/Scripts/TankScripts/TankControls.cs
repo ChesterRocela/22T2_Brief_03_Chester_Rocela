@@ -16,6 +16,8 @@ public class TankControls
     public KeyCode left = KeyCode.A; // the left button
     public KeyCode right = KeyCode.D; // the right button
     public KeyCode fireButton = KeyCode.Space; // the button to fire
+    public KeyCode play1Stamina = KeyCode.LeftShift; // Player 1 Stamina
+    public KeyCode play2stamina = KeyCode.RightShift; // player 2 stamina
     private bool fireButtonWasPressed = false; // has the fire button been pressed?
 
     /// <summary>
@@ -41,6 +43,14 @@ public class TankControls
                     {
                         currentValue = -1; // we are moving negatively
                     }
+                    else if (Input.GetKey(play1Stamina))
+                    {
+                        player1stamina.instance.UseStamina(1);
+                    }
+                   else if(Input.GetKey(play2stamina))
+                   {
+                        player2stamina.instance.UseStamina(1);
+                   }
                     break;
                 }
             case KeyType.Rotation:
