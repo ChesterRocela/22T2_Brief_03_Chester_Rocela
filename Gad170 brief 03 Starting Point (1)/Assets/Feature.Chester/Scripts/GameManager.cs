@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*[SerializeField]
 public class GameManager : MonoBehaviour
 {
-   /* public int NumRoundsToWin = 5;
+    public int NumRoundsToWin = 5;
     public float StartDelay = 3f;
     public float EndDelay = 3f;
     public TankCameraController CameraControl;
@@ -148,6 +149,6 @@ public class GameManager : MonoBehaviour
 
         return message;
     }
-    */
-} 
+   
+} */
 

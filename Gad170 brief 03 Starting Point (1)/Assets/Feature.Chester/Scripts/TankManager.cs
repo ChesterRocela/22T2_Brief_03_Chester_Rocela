@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-
-[Serializable]
+/*[SerializeField]
 public class TankManager 
 {
-   /* public Color playercolor;
+    public Color playercolor;
     public Transform m_spawnpoint;
     [HideInInspector] public int playernumber;
     [HideInInspector] public string coloredplayertext;
@@ -59,5 +58,5 @@ public class TankManager
         instance.SetActive(false);
         instance.SetActive(true);
     }
-    */
-}
+    
+} */
