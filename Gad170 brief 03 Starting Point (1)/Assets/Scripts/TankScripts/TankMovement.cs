@@ -9,7 +9,7 @@ using UnityEngine;
 [System.Serializable]
 public class TankMovement 
 {
-    public float speed = 12f; // the speed our tank moves
+    public float speed = 8f; // the speed our tank moves
     public float turnSpeed = 180f; // the speed that we can turn in degrees in seconds.
 
     private TankParticleEffects tankParticleEffects = new TankParticleEffects(); // creating a new instance of our tank particle effects class

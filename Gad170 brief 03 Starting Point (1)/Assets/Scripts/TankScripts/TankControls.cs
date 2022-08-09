@@ -16,9 +16,11 @@ public class TankControls
     public KeyCode left = KeyCode.A; // the left button
     public KeyCode right = KeyCode.D; // the right button
     public KeyCode fireButton = KeyCode.Space; // the button to fire
+    private bool fireButtonWasPressed = false; // has the fire button been pressed?
+
+    // feature.chester
     public KeyCode play1Stamina = KeyCode.LeftShift; // Player 1 Stamina
     public KeyCode play2stamina = KeyCode.RightShift; // player 2 stamina
-    private bool fireButtonWasPressed = false; // has the fire button been pressed?
 
     public int playernumber { get; internal set; }
 
@@ -45,11 +47,11 @@ public class TankControls
                     {
                         currentValue = -1; // we are moving negatively
                     }
-                    else if (Input.GetKey(play1Stamina))
+                    else if (Input.GetKey(play1Stamina)) //Feature.Chester
                     {
                         player1stamina.instance.UseStamina(1);
                     }
-                   else if(Input.GetKey(play2stamina))
+                   else if(Input.GetKey(play2stamina)) //Feature.Chester
                    {
                         player2stamina.instance.UseStamina(1);
                    }
