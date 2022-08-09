@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player1Sprint : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Player1Sprint : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             cm.tankMovement.speed = sprintspeed;
+            
         }
     }
 }
