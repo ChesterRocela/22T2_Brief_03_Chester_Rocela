@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class player1stamina : MonoBehaviour
+public class PlayerOneStamina : MonoBehaviour
 {
-    public Slider Play1stamina;
+    public Slider playOneStaminaBar;
 
-    private int maxStamina = 300;
+    private int maxStamina = 200;
     private int currentStamina;
-    
-    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+
+    private WaitForSeconds regenTick = new WaitForSeconds(0.3f);
     private Coroutine regen;
 
-    public static player1stamina instance;
+    public static PlayerOneStamina instance;
 
     private void Awake()
     {
@@ -21,9 +21,12 @@ public class player1stamina : MonoBehaviour
     }
     void Start()
     {
+        //currentstamina becomes 200 
         currentStamina = maxStamina;
-        Play1stamina.maxValue = maxStamina;
-        Play1stamina.value = maxStamina;
+
+        //setting slider to maxvalue to 200
+        playOneStaminaBar.maxValue = maxStamina;
+        playOneStaminaBar.value = maxStamina;
 
     }
     public void UseStamina(int amount)
@@ -31,7 +34,7 @@ public class player1stamina : MonoBehaviour
         if (currentStamina - amount >= 0)
         {
             currentStamina -= amount;
-            Play1stamina.value = currentStamina;
+            playOneStaminaBar.value = currentStamina;
 
             if (regen != null)
                 StopCoroutine(regen);
@@ -45,12 +48,12 @@ public class player1stamina : MonoBehaviour
     }
     private IEnumerator RegenStamina()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1f);
 
         while(currentStamina < maxStamina)
         {
             currentStamina += maxStamina / 100;
-            Play1stamina.value = currentStamina;
+            playOneStaminaBar.value = currentStamina;
             yield return regenTick;
         }
         regen = null;

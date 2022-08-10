@@ -7,19 +7,24 @@ namespace ChesterRocela
 {
     public class Powerup : MonoBehaviour
     {
-        public float multiplier = 2f;
-        public float durationPowerUp = 15f;
         
+        public float multiplier = 2f;
+        public float durationPowerUp = 3f;
 
-        void OnTriggerEnter(Collider other)
+        public WaitForSeconds returnHealth = new WaitForSeconds(0.3f);
+
+        private void OnTriggerEnter(Collider other)
         {
             // calling out "player" tag 
             if (other.CompareTag("Player"))
             {
-                //function to start 
+                //function to start when player triggers powerup
                 StartCoroutine(Pickup(other));
+
+                other.GetComponent<Tank>().tankHealth.maxHealth += 100;
             }
         }
+            
         IEnumerator Pickup(Collider player)
         {
             //call out when player picks up Powerup
@@ -36,7 +41,7 @@ namespace ChesterRocela
             //if player health is greater then 100, tank scale is multiplied by 2 
             stats.health *= multiplier;
 
-            if(stats.health > 100)
+            if (stats.health > 100)
             {
                 player.transform.localScale *= multiplier;
             }

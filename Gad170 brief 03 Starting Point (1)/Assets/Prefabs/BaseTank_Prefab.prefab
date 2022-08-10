@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcbc84631449394fa06a2c1f68ed15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableTankMovement: 0
+  enableTankMovement: 1
   playerNumber: 0
   tankControls:
     forward: 119
@@ -434,6 +434,7 @@ MonoBehaviour:
     left: 97
     right: 100
     fireButton: 32
+    playstamina: 0
   tankHealth:
     minHealth: 0
     maxHealth: 100

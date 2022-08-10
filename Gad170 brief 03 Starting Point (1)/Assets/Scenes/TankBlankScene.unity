@@ -2363,7 +2363,7 @@ GameObject:
   - component: {fileID: 813883951}
   - component: {fileID: 813883952}
   m_Layer: 5
-  m_Name: Stamina bar player 1
+  m_Name: sprint bar player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2388,7 +2388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -407, y: 242}
+  m_AnchoredPosition: {x: -423, y: 242}
   m_SizeDelta: {x: 180, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813883951
@@ -2436,7 +2436,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 200
   m_WholeNumbers: 0
   m_Value: 0.3
   m_OnValueChanged:
@@ -2454,7 +2454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ad0ca7215e12a43a0c58b8bd7457cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Play1stamina: {fileID: 813883951}
+  playOneStaminaBar: {fileID: 813883951}
 --- !u!1 &827759868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2586,7 @@ GameObject:
   - component: {fileID: 903909665}
   - component: {fileID: 903909664}
   m_Layer: 5
-  m_Name: Staminbaar
+  m_Name: sprintBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2920,7 +2920,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PLAYER 2: 0'
+  m_Text: PLAYER 2
 --- !u!222 &991157242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3312,7 +3312,7 @@ Transform:
   - {fileID: 813846119}
   - {fileID: 1099523168}
   m_Father: {fileID: 1252782428}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078551429 stripped
 GameObject:
@@ -3476,31 +3476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 184234769667058720, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234769667058723, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234770000176943, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234770416184207, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234770673689529, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
+    - target: {fileID: 1947750957, guid: aba5dc34144335c43a163d644929c642, type: 3}
+      propertyPath: playerOneStamina
+      value: 
+      objectReference: {fileID: 813883952}
     - target: {fileID: 184234770673689530, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3510,46 +3489,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234770964413191, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 184234770985567058, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 426387477628536783, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 618598507970642736, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 809954068598049350, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074705711845588300, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074705712878829410, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1074705712892575694, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1318264945699395747, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
@@ -3606,11 +3545,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2504495110698576632, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2504495111114236499, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3621,103 +3555,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2504495111114236500, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2504495111216466441, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2504495111216466441, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 2504495111216466442, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2504495112165960644, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
       propertyPath: m_Name
       value: Player_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
+    - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
+      propertyPath: tankControls.playstamina
+      value: 304
       objectReference: {fileID: 0}
     - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
-      propertyPath: tankHealth.isDead
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: enableTankMovement
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: tankMovement.speed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786163784148145521, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: tankHealth.maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330961946120512846, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: -3853816671656218547, guid: 0c297b65e86a96d4f9f9143682e6651d,
-        type: 3}
-    - target: {fileID: 3330961946120512846, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: -2283591071801479797, guid: 0c297b65e86a96d4f9f9143682e6651d,
-        type: 3}
-    - target: {fileID: 7029449025648086875, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7029449025661865975, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7637072162323137753, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7646187981711904248, guid: aba5dc34144335c43a163d644929c642,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
+      propertyPath: tankControls.Playerstamina
+      value: 304
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba5dc34144335c43a163d644929c642, type: 3}
@@ -3951,9 +3802,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1065927767}
-  - {fileID: 903909667}
   - {fileID: 1727873868}
+  - {fileID: 903909667}
+  - {fileID: 1065927767}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4389,24 +4240,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1454985805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-    type: 3}
-  m_PrefabInstance: {fileID: 1995614346}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1454985811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454985805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2217a1da7cfdb684782d079b81acae99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1473579045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,37 +5613,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.7487373, y: 1.9718478, z: 7.616281}
   m_Center: {x: 1.3477052, y: -0.018388301, z: -0.7943466}
---- !u!1 &1947750945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2598633211480631984, guid: aba5dc34144335c43a163d644929c642,
-    type: 3}
-  m_PrefabInstance: {fileID: 1133360520}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1947750957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947750945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81ce0f5927bae7b4ab57487930005ed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1947750963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947750945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5b1294896d26764387fa83ebd998ab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!1001 &1995614346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5818,61 +5620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2675628598099721543, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2792616420940919910, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3364355878938099528, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4744285313452019677, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4744285313830161907, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4900058862746073849, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5163585249392587663, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5393021363137673072, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961636599559149, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961636620323768, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961637173107504, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
+    - target: {fileID: 1454985811, guid: a504c6c563098ec4f9c3c8dd35ce8250, type: 3}
+      propertyPath: playerTwoStamina
+      value: 
+      objectReference: {fileID: 2099521971}
     - target: {fileID: 5598961637430612741, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -5882,31 +5633,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961637430612742, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961637766159507, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961637766159516, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961637766159519, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598961638107666320, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6734679720947066908, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
@@ -5965,75 +5691,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
-      propertyPath: tankHealth.isDead
-      value: 1
+      propertyPath: playerNumber
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
-      propertyPath: enableTankMovement
-      value: 1
+      propertyPath: tankControls.playstamina
+      value: 303
       objectReference: {fileID: 0}
     - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
-      propertyPath: tankMovement.speed
-      value: 8
+      propertyPath: tankControls.Playerstamina
+      value: 303
       objectReference: {fileID: 0}
-    - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: tankHealth.maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7608682375549412814, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: tankMainGun.tankShellPrefab
-      value: 
-      objectReference: {fileID: 6863767184128917887, guid: 64d33ca7dc1959b43b854fc666f30204,
-        type: 3}
-    - target: {fileID: 7722893114977114633, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
       propertyPath: m_Name
       value: Player_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7722893114977114639, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925429849454943099, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925429849883294389, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925429850405640775, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7925429850527634155, guid: a504c6c563098ec4f9c3c8dd35ce8250,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7925429850527634156, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
@@ -6143,7 +5817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PLAYER 1: 0'
+  m_Text: PLAYER 1
 --- !u!222 &2024260371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6332,7 +6006,7 @@ GameObject:
   - component: {fileID: 2099521970}
   - component: {fileID: 2099521971}
   m_Layer: 5
-  m_Name: 'Stamina bar player 2 '
+  m_Name: 'sprint bar player 2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6357,7 +6031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110.71005, y: 238}
+  m_AnchoredPosition: {x: 103, y: 240}
   m_SizeDelta: {x: 180, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099521970
@@ -6405,7 +6079,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 200
   m_WholeNumbers: 0
   m_Value: 0.3
   m_OnValueChanged:
@@ -6423,7 +6097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab97d5dd9d7503343b40598fb5b44614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Play2Stamina: {fileID: 2099521970}
+  playerTwoStaminaBar: {fileID: 2099521970}
 --- !u!1001 &2118941359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6508,12 +6182,12 @@ PrefabInstance:
     - target: {fileID: 978428251128584312, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 978428251128584312, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.701609
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 978428251128584312, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
@@ -6523,7 +6197,7 @@ PrefabInstance:
     - target: {fileID: 978428251128584312, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.825737
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 978428251128584312, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
@@ -6562,23 +6236,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 978428251128584316, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}
-      propertyPath: duration
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 978428251128584316, guid: 0b64ebfc98161e1468600e22381d5441,
-        type: 3}
-      propertyPath: multiplier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 978428251128584316, guid: 0b64ebfc98161e1468600e22381d5441,
-        type: 3}
-      propertyPath: normalSizetank
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 978428251128584316, guid: 0b64ebfc98161e1468600e22381d5441,
-        type: 3}
       propertyPath: durationPowerUp
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 978428251128584317, guid: 0b64ebfc98161e1468600e22381d5441,
         type: 3}

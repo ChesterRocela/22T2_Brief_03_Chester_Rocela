@@ -8,5 +8,6 @@ namespace ChesterRocela
     {
         // Health script that can be called out from PowerUp script
         public float health = 100f;
+
     }
 }
