@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class Player1Sprint : MonoBehaviour
 {
-    Tank cm;
+    Tank tanks;
     private float normalspeed;
     private float sprintspeed;
 
     void Start()
     {
-        cm = GetComponent<Tank>();
-        normalspeed = cm.tankMovement.speed;
+        tanks = GetComponent<Tank>();
+        normalspeed = tanks.tankMovement.speed;
         sprintspeed = normalspeed * 2;
     }
     void Update()
@@ -20,7 +20,7 @@ public class Player1Sprint : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            cm.tankMovement.speed = sprintspeed;
+            tanks.tankMovement.speed = sprintspeed;
             
         }
     }

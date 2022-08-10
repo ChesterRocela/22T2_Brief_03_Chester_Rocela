@@ -8,8 +8,8 @@ namespace ChesterRocela
     public class Powerup : MonoBehaviour
     {
         public float multiplier = 2f;
-        public float duration = 4f;
-        public float normalSizetank = 5f;
+        public float durationPowerUp = 15f;
+        
 
         void OnTriggerEnter(Collider other)
         {
@@ -23,7 +23,7 @@ namespace ChesterRocela
         IEnumerator Pickup(Collider player)
         {
             //call out when player picks up Powerup
-            Debug.Log("BIG MAN!!"); 
+            Debug.Log("MORE POWER MEANS GET BIGGER"); 
 
             //calling from playerstats script 
             PlayerStats stats = player.GetComponent<PlayerStats>();
@@ -31,22 +31,24 @@ namespace ChesterRocela
             // disabling meshrenderer and collider on gameobject
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
-            
-            // changing player scale when picking up powerup 
-            // waiting for 5 second before it goes back to its normal size
-            player.transform.localScale *= multiplier;
-
-            yield return new WaitForSeconds(normalSizetank);
-
-            player.transform.localScale /= multiplier;
 
             // increases player health when powerup has been triggered
-            // and returning health back to its normal health
+            //if player health is greater then 100, tank scale is multiplied by 2 
             stats.health *= multiplier;
 
-            yield return new WaitForSeconds(duration);
+            if(stats.health > 100)
+            {
+                player.transform.localScale *= multiplier;
+            }
 
+            // duration of how long the powerup till it fades 
+            yield return new WaitForSeconds(durationPowerUp);
+
+            //setting player health back to normal 
+            //setting player scale size back to normal
             stats.health /= multiplier;
+
+            player.transform.localScale /= multiplier;
 
             // destroying gameobject on pickup
             Destroy(gameObject);
