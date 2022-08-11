@@ -13,15 +13,21 @@ namespace ChesterRocela
 
         public WaitForSeconds returnHealth = new WaitForSeconds(0.3f);
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider collision)
         {
             // calling out "player" tag 
-            if (other.CompareTag("Player"))
+            if (collision.CompareTag("Player 1"))
             {
                 //function to start when player triggers powerup
-                StartCoroutine(Pickup(other));
+                StartCoroutine(Pickup(collision));
 
-                other.GetComponent<Tank>().tankHealth.maxHealth += 100;
+                collision.GetComponent<Tank>().tankHealth.maxHealth += 100;
+            }
+            if(collision.CompareTag("Player 2"))
+            {
+                StartCoroutine(Pickup(collision));
+
+                collision.GetComponent<Tank>().tankHealth.maxHealth += 100;
             }
         }
             

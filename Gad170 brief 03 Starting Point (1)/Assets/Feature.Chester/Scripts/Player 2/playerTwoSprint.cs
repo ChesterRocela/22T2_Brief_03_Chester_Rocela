@@ -7,7 +7,7 @@ public class playerTwoSprint : MonoBehaviour
 {
     Tank tanks;
     [SerializeField] private PlayerTwoStamina playerTwoStamina;
-    public float normalspeed;
+    private float normalspeed;
     private float Sprintspeed;
 
     void Start()
